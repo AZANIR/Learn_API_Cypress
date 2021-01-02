@@ -9,6 +9,7 @@
     "test-chrome": "npx cypress run --browser chrome",
     "test-dashboard": "npx cypress run --record --key 74e719f3-859d-4467-94e8-74ff0feb83d2",
     "test-webdriveruni": "npx cypress run --spec cypress/integration/webdriver-uni/*",
+    "test-autostore": "npx cypress run --spec cypress/integration/automation-test-store/*",
     "test-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 74e719f3-859d-4467-94e8-74ff0feb83d2",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
@@ -16,7 +17,8 @@
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run test-headless && npm run mochawesome-merge",
-    "test-staging": "npx cypress run --env configFile=staging"
+    "test-staging": "npx cypress run --env configFile=staging",
+    "cypress-multi-browser": "npm run test-autostore -- --browser electron --headed & npm run test-autostore -- --browser edge --headed"
   },
   "author": "Leonid",
   "license": "ISC",
@@ -24,7 +26,6 @@
     "cypress": "^6.2.0",
     "cypress-file-upload": "^4.1.1",
     "cypress-multi-reporters": "^1.4.0",
-    "cypress-plugin-retries": "^1.5.2",
     "cypress-xpath": "^1.6.1",
     "mocha": "^8.2.1",
     "mocha-junit-reporter": "^2.0.0",
