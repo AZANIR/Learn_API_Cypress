@@ -1,4 +1,5 @@
 .gitignore Content:
+JSON-server
 node_modules
 results
 screenshots
