@@ -8,3 +8,5 @@ java -jar -Dfile.encoding=UTF-8 jenkins.war
 Use from Json server [project this link](https://github.com/qauni/json-server)
 
 Use from Angular [project this link](https://github.com/qauni/angular-realworld-example-app)
+
+Use from juse shop [project this link](https://github.com/qauni/juice-shop)
