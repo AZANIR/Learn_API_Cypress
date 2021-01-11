@@ -32,5 +32,15 @@
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AZANIR/Learn_API_Cypress.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AZANIR/Learn_API_Cypress/issues"
+  },
+  "homepage": "https://github.com/AZANIR/Learn_API_Cypress#readme"
 }
